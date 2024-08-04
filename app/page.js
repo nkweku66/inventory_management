@@ -14,7 +14,7 @@ export default function SignIn() {
             const result = await signInWithPopup(auth, provider);
             const user = result.user;
             // User signed in successfully
-            router.push('/app/inventory'); // Redirect to /inventory page
+            router.push('/inventory'); // Redirect to /inventory page
         } catch (error) {
             console.error('Error signing in with Google:', error);
         }
